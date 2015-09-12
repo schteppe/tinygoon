@@ -173,12 +173,7 @@
 
 	function initGoo() {
 		// Create typical Goo application.
-		var gooRunner = new goo.GooRunner({
-			antialias: true,
-			manuallyStartGameLoop: true,
-			useDevicePixelRatio: true,
-			logo: false
-		});
+		var gooRunner = new goo.GooRunner({"alpha": false, "useDevicePixelRatio": true, "manuallyStartGameLoop": true, "antialias": true, "logo": false});
 
 		gooRunner.world.add(new goo.AnimationSystem());
 		gooRunner.world.add(new goo.StateMachineSystem(gooRunner));
